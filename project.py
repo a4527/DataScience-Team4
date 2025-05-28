@@ -84,10 +84,3 @@ x_test_processed = pipeline.transform(x_test)
 # 전처리가 잘 됐는지 확인하기 위한 용도 / 필요없으면 지워도 됨
 x_train_df = get_preprocessed_dataframe(pipeline, x_train_processed, numeric_cols, categorical_cols)
 print(x_train_df.head())
-
-
-
-
-
-
-

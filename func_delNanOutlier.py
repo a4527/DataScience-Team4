@@ -1,5 +1,7 @@
 # 데이터 프레임의 결측치와 이상치 제거 함수
 def remove_missing_and_outliers_iqr(df):
+    """
+    IQR 방식을 사용하여 데이터 프레임의 결측치와 이상치를 제거"""
     # 1. 결측치 제거
     df_cleaned = df.dropna()
 
