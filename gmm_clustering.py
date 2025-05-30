@@ -47,8 +47,7 @@ def plot_gmm_clusters(data_3d, n_clusters):
     result_df = pd.DataFrame(data_3d, columns=['PC1', 'PC2', 'PC3'])
     result_df['Target'] = selected['Target'].values
     result_df['Cluster'] = labels
-    print(f"
-Cluster Summary for n={n_clusters}:")
+    print(f"\nCluster Summary for n={n_clusters}:")
     print(result_df.groupby('Cluster')['Target'].agg(['mean', 'count']))
 
     # samples with ambiguous membership
